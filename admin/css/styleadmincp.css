@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../../photo/tavth.jpg'); /* Đường dẫn tới hình nền */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    filter: brightness(60%); /* Làm mờ hình nền đi 60% */
+}
+
+.login {
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    margin-right: 15%; /* Di chuyển khung đăng nhập cách lề phải 20% */
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng khi trỏ chuột vào khung */
+}
+
+.login:hover {
+    background-color: rgba(200, 200, 200, 0.9); /* Thay đổi màu nền khi trỏ chuột vào */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Thay đổi shadow khi trỏ chuột vào */
+}
+
+.login h2 {
+    margin-bottom: 30px;
+    color: #797878;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #939393;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #eaeaea;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #a0a0a0;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #666;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f1efef;
+}

@@ -1,0 +1,371 @@
+/* body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 0 20px;
+}
+/* Ctrl/ */
+/* comment nhanh */
+/* Header */
+.header {
+    height: 100px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+/* menu */
+.menu {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ffcc00;
+}
+
+/* main */
+#main {
+    display: flex;
+    margin: 20px auto; /* Tạo khoảng cách đều giữa các phần tử */
+    max-width: 1500px; /* Đặt giới hạn chiều rộng để nội dung không bị quá rộng */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước tổng thể */
+}
+/* sidebar */
+.sidebar {
+    width: 15%;
+    float: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #454545;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #a0fcb4;
+}
+/* maincontect */
+.maincontent {
+    width:80%;
+    margin-left: 20px;
+    
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(30, 30, 30, 0.1);
+    border-radius: 8px;
+}
+
+.list_sanpham {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    list-style-type: none; /* Loại bỏ dấu chấm đầu mục */
+}
+
+/* Khung chứa mỗi sản phẩm */
+.list_sanpham li {
+    width: 25%; /* Tăng kích thước khung của mỗi sản phẩm */
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd; /* Đường viền khung */
+    border-radius: 8px; /* Bo tròn góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho khung */
+    transition: box-shadow 0.3s ease; /* Hiệu ứng đổ bóng khi hover */
+    overflow: hidden; /* Đảm bảo nội dung không tràn ra ngoài khung */
+}
+.list_sanpham a {
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: inherit; /* Kế thừa màu sắc từ phần tử cha */
+    display: block; /* Đảm bảo liên kết chiếm toàn bộ không gian li */
+}
+.list_sanpham li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Thay đổi đổ bóng khi hover */
+}
+
+/* Hình ảnh sản phẩm */
+.list_sanpham li img {
+    width: 100%;
+    height: auto; /* Kích thước cố định cho hình vuông */
+    object-fit: cover; /* Cắt hình ảnh để giữ tỷ lệ mà không làm méo hình */
+    border-radius: 8px; /* Bo tròn các góc hình ảnh */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng cho hình ảnh */
+}
+
+.list_sanpham li img:hover {
+    transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Thay đổi đổ bóng khi hover */
+}
+
+.title_sanpham {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title_gia {
+    font-size: 16px;
+    color: #ff6600;
+}
+.title_sanpham, .title_gia, .list_sanpham p {
+    text-align: left; /* Căn lề trái cho văn bản */
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 0; /* Loại bỏ padding mặc định */
+    font-weight: bold;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Đẩy footer xuống dưới cùng */
+    border-radius: 8px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/* Khung tổng thể cho giỏ hàng */
+.cart-container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề giỏ hàng */
+.cart-container h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Bảng hiển thị giỏ hàng */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Tiêu đề các cột */
+.cart-table th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Hàng dữ liệu */
+.cart-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+
+/* Hình ảnh sản phẩm */
+.cart-table td img {
+    width: 120px; /* Kích thước hình vuông ban đầu */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Thêm transition cho hiệu ứng */
+}
+
+/* Hiệu ứng phóng to khi trỏ chuột tới */
+.cart-table td img:hover {
+    transform: scale(1.3); /* Phóng to 30% */
+}
+
+
+/* Màu nền xen kẽ các hàng */
+.cart-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Thông báo giỏ hàng trống */
+.cart-empty-message {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
+
+/* Hiệu ứng hover */
+.cart-table tr:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+/* Điều chỉnh văn bản cho số lượng, giá và tổng tiền */
+.cart-table td:nth-child(5), 
+.cart-table td:nth-child(6),
+.cart-table td:nth-child(7) {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Điều chỉnh khung số lượng */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Điều chỉnh nút cộng trừ */
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 28px; /* Giảm chiều cao văn bản */
+    text-align: center;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+/* Hiệu ứng hover cho nút cộng trừ */
+.quantity-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Định dạng cho input số lượng */
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    height: 30px; /* Đảm bảo kích thước chiều cao đồng bộ với nút */
+    border-radius: 5px;
+    line-height: 28px; /* Căn chỉnh văn bản trung tâm */
+}
+
+/* Thùng rác đổi màu khi di chuột */
+.cart-table td a i.fa-trash {
+    color: #ff4d4d;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Hiệu ứng hover đổi sang màu xanh dương */
+.cart-table td a:hover i.fa-trash {
+    color: #007bff;
+}
+.menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.list_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.list_menu li {
+    margin-right: 15px; /* Khoảng cách giữa các mục menu */
+}
+
+.list_menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.list_menu li a:hover {
+    background-color: #004080;
+}
+
+.search-form {
+    margin-left: auto; /* Đẩy form tìm kiếm sang bên phải */
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.search-input {
+    height: 60%; /* Chiều cao bằng 60% chiều cao menu */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-button {
+    height: calc(60% + 4px); /* Nút tìm kiếm lớn hơn xíu */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+
+.menu .search-button:hover {
+    background-color: #45a049;
+}

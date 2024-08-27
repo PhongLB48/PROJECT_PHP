@@ -1,0 +1,131 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.wrapper {
+    border: 1px solid #000;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.wrapper_chitiet {
+     
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.hinhanh_sanpham{
+    float: left;
+    width: 40%;
+}
+.chitiet_sanpham{
+    float: right;
+    width: 48%;
+    margin: 0 10px;
+}
+input.themgiohang{
+    border: none;
+    background:#333  ;
+    color: blanchedalmond;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.header {
+    background-image: url("../photo/tavth.jpg"); /* Màu nền cho header */
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff; /* Màu chữ trắng */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#main {
+    border: 2px solid #000;
+    width: 100%;
+    margin: 0 auto; /* Canh giữa phần main */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng để tạo chiều sâu */
+    overflow: hidden; /* Đảm bảo các phần tử bên trong không tràn ra ngoài */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.sidebar {
+    border: 1px solid #ccc; /* Đổi màu viền để mềm mại hơn */
+    height: 400px;
+    width: 20%;
+    background-color: #f5f5f5; /* Thêm màu nền nhạt */
+    padding: 10px; /* Thêm padding để nội dung không sát với viền */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    box-sizing: border-box; /* Bao gồm padding trong chiều rộng/chiều cao */
+}
+.list_sidebar {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list_sidebar li {
+    margin-left: 0;
+}
+
+.maincontent {
+     /* Đổi màu viền để mềm mại hơn */
+    width:79%; /* Để lại khoảng cách cho sidebar */
+    background-color: #fff; /* Thêm màu nền trắng */
+    padding: 0px; /* Thêm padding để nội dung không sát với viền */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    box-sizing: border-box; /* Bao gồm padding trong chiều rộng/chiều cao */
+    overflow: hidden; /* Đảm bảo các phần tử bên trong không tràn ra ngoài */
+}
+
+ul.list_sanpham {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép nội dung tự xuống dòng */
+    gap: 10px; /* Khoảng cách giữa các sản phẩm */
+    justify-content: space-between; /* Đặt khoảng cách hợp lý giữa các sản phẩm */
+}
+
+ul.list_sanpham li {
+    width: 23%;
+    border: 1px solid #ccc; /* Đổi màu viền để mềm mại hơn */
+    background-color: #fff; /* Thêm màu nền trắng */
+    border-radius: 5px; /* Bo góc */
+    overflow: hidden; /* Ẩn nội dung tràn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng khi hover */
+    box-sizing: border-box; /* Bao gồm padding trong chiều rộng/chiều cao */
+}
+
+ul.list_sanpham li img {
+    width: 100%;
+    height: auto; /* Đảm bảo ảnh co dãn đúng tỷ lệ */
+    display: block;
+    border-bottom: 1px solid #ccc; /* Thêm viền dưới ảnh */
+}
+
+.footer{
+    border: 1px solid #000;
+    height: 150px;
+    width: 100% ;
+    background: hsl(240, 56%, 79%);
+    text-align: center;
+}
+p.footer_copy {
+    text-align: center;
+    color: #000;
+}
+.clear{
+    clear: both;
+}

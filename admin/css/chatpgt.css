@@ -1,0 +1,792 @@
+/* Reset some default browser styles */
+body, h3, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.tieude_trang {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.5em;
+}
+
+.list_ad {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex; /* Chuyển từ column sang hàng ngang */
+    gap: 10px;
+    justify-content: center; /* Căn giữa menu */
+}
+
+.list_ad li {
+    flex: 1; /* Các mục menu có kích thước bằng nhau */
+}
+
+.list_ad li a {
+    display: block;
+    padding: 12px;
+    background: #6e8efb;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.list_ad li a:hover {
+    background: #a777e3;
+}
+
+.clear {
+    clear: both;
+}
+
+#main {
+    padding: 20px;
+    min-height: 300px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+    color: #999;
+    font-size: 0.9em;
+}
+
+p.footer {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+
+/* bang danh muc */
+/* Bảng danh mục sản phẩm */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Kết hợp các đường biên */
+    margin: 20px 0; /* Khoảng cách trên và dưới bảng */
+}
+
+th, td {
+    padding: 12px; /* Khoảng cách bên trong ô */
+    text-align: left; /* Canh trái nội dung trong ô */
+    border-bottom: 1px solid #ddd; /* Đường kẻ dưới các ô */
+}
+
+th {
+    background-color: #6e8efb; /* Màu nền của tiêu đề */
+    color: white; /* Màu chữ tiêu đề */
+    font-weight: bold; /* Chữ đậm cho tiêu đề */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Màu nền hàng chẵn */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* Màu nền khi di chuột qua hàng */
+}
+
+/* Font Awesome icons */
+a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.icon-edit, .icon-delete {
+    display: inline-block;
+    width: 30px; /* Kích thước biểu tượng */
+    height: 30px; /* Kích thước biểu tượng */
+    text-align: center; /* Canh giữa nội dung biểu tượng */
+    line-height: 30px; /* Căn giữa nội dung theo chiều dọc */
+    border-radius: 50%; /* Vòng tròn */
+    transition: all 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+.icon-edit {
+    color: #28a745; /* Màu xanh lá cây */
+}
+
+.icon-delete {
+    color: #dc3545; /* Màu đỏ */
+}
+
+.icon-edit:hover, .icon-delete:hover {
+    background-color: #007bff; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+}
+
+/* Định dạng biểu tượng */
+a i {
+    font-size: 16px; /* Kích thước biểu tượng */
+}
+
+
+
+/* Them danh muc sp */
+/* Container for the form */
+.form-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the table */
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form td {
+    padding: 10px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5a7cdb;
+}
+
+/* Container for the table */
+.table-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6e8efb;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Icon styles */
+a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.icon-edit, .icon-delete {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.icon-edit {
+    color: #28a745; /* Màu xanh lá cây */
+}
+
+.icon-delete {
+    color: #dc3545; /* Màu đỏ */
+}
+
+.icon-edit:hover, .icon-delete:hover {
+    background-color: #007bff; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+}
+
+/* Icon font size */
+a i {
+    font-size: 16px; /* Kích thước biểu tượng */
+}
+/* Container for the form */
+.form-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the table */
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form td {
+    padding: 10px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5a7cdb;
+}
+/* bảng sản phảm */
+/* Container for the table */
+.table-container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6e8efb;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Image styles */
+img {
+    max-width: 100px; /* Giới hạn kích thước hình ảnh */
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Icon styles */
+a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.icon-edit, .icon-delete {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.icon-edit {
+    color: #28a745; /* Màu xanh lá cây */
+}
+
+.icon-delete {
+    color: #dc3545; /* Màu đỏ */
+}
+
+.icon-edit:hover, .icon-delete:hover {
+    background-color: #007bff; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+}
+
+/* Icon font size */
+a i {
+    font-size: 16px; /* Kích thước biểu tượng */
+}
+/* Style for the form title Bảng sửa sản phẩm*/
+.form-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Container for the form */
+.form-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="file"], 
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+}
+
+/* Style for image upload */
+.image-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-upload img {
+    height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.image-upload input[type="file"] {
+    flex: 1;
+}
+
+/* Style for radio buttons */
+.radio-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #5a7cdb;
+}
+/* Style for the form title  Sửa bài viết*/
+.form-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Container for the form */
+.form-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="file"], 
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+}
+
+/* Style for image upload */
+.image-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-upload img {
+    height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.image-upload input[type="file"] {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #5a7cdb;
+}
+/* Style for the form container */
+.form-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form title sửa dm qly sp*/
+.form-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    background-color: #6e8efb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #a777e3;
+}
+
+/* Style for icons inside buttons */
+.btn-submit i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+/* Style for input with focus */
+.form-group input:focus {
+    border-color: #6e8efb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+}
+/* Liệt kê bài viết */
+/* Reset some default browser styles */
+body, h2, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for page title */
+.page-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Style for table */
+.post-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.post-table thead {
+    background-color: #6e8efb;
+    color: #fff;
+}
+
+.post-table th, .post-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.post-table th {
+    font-weight: bold;
+}
+
+.post-table td {
+    vertical-align: middle;
+}
+
+/* Style for post images */
+.post-image {
+    height: 130px;
+    width: auto;
+    border-radius: 4px;
+}
+
+/* Style for action icons */
+.action-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-icons a {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s, background 0.3s;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+}
+
+.action-icons a:hover {
+    color: #fff;
+    background-color: #6e8efb;
+}
+
+/* Style for delete icon */
+.icon-delete {
+    color: #f44336;
+}
+
+.icon-delete:hover {
+    background-color: #ff4d4d;
+}
+
+/* Style for edit icon */
+.icon-edit {
+    color: #4caf50;
+}
+
+.icon-edit:hover {
+    background-color: #66bb6a;
+}
+/* bảng thêm bv */
+/* Reset some default browser styles */
+body, h2, table, form, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for page title */
+.page-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Style for form container */
+.form-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style for form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="file"], 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group input[type="text"]:focus, 
+.form-group textarea:focus {
+    border-color: #6e8efb;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Style for submit button */
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #6e8efb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #5a7fff;
+}
